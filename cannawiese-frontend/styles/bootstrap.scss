@@ -1,0 +1,43 @@
+// Eigene Variablen
+@import "variables";
+
+// Bootstrap importieren
+@import "~bootstrap/scss/bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons.min.css";
+
+// Eigene Styles
+body {
+  font-size: $body-font-size;
+  font-family: var(--font-openSans), sans-serif;
+  color: $primary;
+  @include custom-scroll-bar;
+  height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+.fs-1 {
+  font-size: $h1-font-size!important;
+}
+.fs-2 {
+  font-size: $h2-font-size!important;
+}
+.fs-3 {
+  font-size: $h3-font-size!important;
+
+}
+.fs-4 {
+  font-size: $h4-font-size!important;
+}
+.fs-5 {
+  font-size: $h5-font-size!important;
+}
+.fs-6 {
+  font-size: $h6-font-size!important;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,52 @@
+$font-size-root: 16px;
+$body-font-size: $font-size-root;
+
+//COLORS
+$primary: #221E24;
+$secondary: #6C7E5F;
+$secondary-light: #E8F1E2;
+$tertiary: #A39781;
+$tertiary-light: #FAF0DC;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "secondary-light": $secondary-light,
+  "tertiary": $tertiary,
+  "tertiary-light": $tertiary-light,
+
+);
+
+// TYPOGRAPHY
+$h1-font-size: 3rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.5rem;
+$h4-font-size: 1.2rem;
+$h5-font-size: 1rem;
+$h6-font-size: .875rem;
+
+$font-sizes: (
+    1: $h1-font-size!important,
+    2: $h2-font-size,
+    3: $h3-font-size,
+    4: $h4-font-size,
+    5: $h5-font-size,
+    6: $h6-font-size,
+);
+
+// SCROLLBAR
+@mixin custom-scroll-bar() {
+  &::-webkit-scrollbar {
+    border-radius: 10px;
+    height: 10px;
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $secondary;
+    border-radius: 0;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $primary;
+    border-radius: 0;
+  }
+}
